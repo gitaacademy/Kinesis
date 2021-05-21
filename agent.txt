@@ -8,7 +8,7 @@
 
   "flows": [
     {
-      "filePattern": "/var/log/weather/*.log",
+      "filePattern": "/var/log/irish/*.log",
       "kinesisStream": "NAMEOFKINESSSTREAM",
       "partitionKeyOption": "RANDOM",
       "dataProcessingOptions": [
