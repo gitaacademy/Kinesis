@@ -1,6 +1,6 @@
 {
   "cloudwatch.emitMetrics": true,
-  "kinesis.endpoint": "",
+  "kinesis.endpoint": "https://kinesis.ap-south-1.amazonaws.com",
   "firehose.endpoint": "",
 
   "awsAccessKeyId": "",
