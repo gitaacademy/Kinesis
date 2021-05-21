@@ -1,0 +1,22 @@
+{
+  "cloudwatch.emitMetrics": true,
+  "kinesis.endpoint": "",
+  "firehose.endpoint": "",
+
+  "awsAccessKeyId": "",
+  "awsSecretAccessKey": "",
+
+  "flows": [
+    {
+      "filePattern": "/var/log/weather/*.log",
+      "kinesisStream": "NAMEOFKINESSSTREAM",
+      "partitionKeyOption": "RANDOM",
+      "dataProcessingOptions": [
+         {
+            "optionName": "CSVTOJSON",
+            "customFieldNames": ["sepal length", "sepal width", "petal length","petal width", "flower type"]
+         }
+      ]
+    }
+  ]
+}
